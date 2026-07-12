@@ -1,0 +1,15 @@
+/*
+  Font fallback used to avoid layout shifts / invisible text if a custom font is slow.
+  We only set font-display behavior for locally-declared fonts if you add them later.
+*/
+
+:root {
+  --app-font-sans: Outfit, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html,
+body {
+  font-family: var(--app-font-sans);
+}
+
